@@ -1,0 +1,28 @@
+{
+  "name": "nail-art-alya",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://Agami-Malikov.github.io/Nail-Art-Alya",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /nail-art-alya/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agami-Malikov/Nail-Art-Alya.git"
+  },
+  "keywords": [],
+  "author": "Agami Malikov <agami.malikov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "path-browserify": "^1.0.1",
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10",
+    "vm-browserify": "^1.1.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

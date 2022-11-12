@@ -1,0 +1,39 @@
+.hero {
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 24px;
+    
+  }
+
+  &__subtitle {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 860px;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  &__subtitle-serif {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__img {
+    position: absolute;
+    right: 90px;
+    bottom: -185px;
+  }
+
+  &__btn {
+    margin-right: 30px;
+  }
+
+  &__link {
+    border-bottom: 1px solid $main-text-color;
+  }
+}
