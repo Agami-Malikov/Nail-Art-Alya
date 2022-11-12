@@ -1,0 +1,2 @@
+const e={servicesLinks:document.querySelector(".services__menu"),links:document.querySelectorAll(".services__menu-link")};e.servicesLinks.addEventListener("click",(s=>{s.preventDefault();const i=s.target;if(i.classList.contains("services__menu-link")){for(let s=0;s<e.links.length;s+=1)e.links[s].classList.remove("services__menu-link--active");i.classList.add("services__menu-link--active")}}));
+//# sourceMappingURL=index.17195760.js.map
