@@ -65,7 +65,7 @@ body {
   font-style: normal;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.04em;
   color: #000000;
 }
@@ -97,6 +97,7 @@ body {
   padding: 13px 26px;
   text-transform: uppercase;
   transition: background-color 0.4s;
+  font-weight: 400;
 }
 .btn:hover {
   background-color: #D4DCB2;
@@ -110,7 +111,6 @@ body {
 .header__inner {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
 }
 .header__logo {
   margin-right: 63px;
@@ -154,6 +154,9 @@ body {
   font-weight: 400;
 }
 
+.hero {
+  padding: 60px 0 100px;
+}
 .hero__inner {
   display: flex;
 }
@@ -174,7 +177,7 @@ body {
 }
 .hero__img {
   position: absolute;
-  right: 90px;
+  right: 40px;
   bottom: -185px;
 }
 .hero__btn {
@@ -182,4 +185,34 @@ body {
 }
 .hero__link {
   border-bottom: 1px solid #000000;
+}
+.hero__services-list {
+  display: flex;
+  margin-top: 85px;
+  margin-bottom: 130px;
+}
+.hero__services-item:not(:last-child) {
+  margin-right: 30px;
+}
+.hero__advantages-list {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 400;
+  color: #181818;
+}
+.hero__advantages-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__advantages-item {
+  font-size: 72px;
+  text-align: center;
+}
+.hero__advantages-item:not(:last-child) {
+  margin-right: 110px;
+}
+.hero__advantages-item-text {
+  display: block;
+  font-size: 18px;
+  max-width: 190px;
 }/*# sourceMappingURL=main.css.map */

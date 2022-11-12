@@ -1,12 +1,13 @@
 .hero {
 
+  padding: 60px 0 100px;
+
   &__inner {
     display: flex;
   }
 
   &__title {
     font-size: 24px;
-    
   }
 
   &__subtitle {
@@ -25,7 +26,7 @@
 
   &__img {
     position: absolute;
-    right: 90px;
+    right: 40px;
     bottom: -185px;
   }
 
@@ -35,5 +36,42 @@
 
   &__link {
     border-bottom: 1px solid $main-text-color;
+  }
+
+  &__services-list {
+    display: flex;
+    margin-top: 85px;
+    margin-bottom: 130px;
+  }
+
+  &__services-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__advantages-list {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 400;
+    color: $header-text-color;
+  }
+
+  &__advantages-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__advantages-item {
+    font-size: 72px;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
+  }
+
+  &__advantages-item-text {
+    display: block;
+    font-size: 18px;
+    max-width: 190px;
   }
 }
