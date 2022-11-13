@@ -1,16 +1,8 @@
 .services {
-  padding: 100px 0 80px;
+  padding: 100px 0 350px;
 
-  &__title {
-    font-size: 72px;
-    text-align: center;
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-weight: 400;
-  }
-
-  &__menu {
+  &__inner {
     position: relative;
-    display: flex;
 
     &::after {
       position: absolute;
@@ -18,22 +10,31 @@
       width: 335px;
       height: 335px;
       background: #E3EBC1;
-      filter: blur(125px);
+      filter: blur(50px);
       left: 0;
-      top: -25px;
+      top: 50px;
       z-index: -1;
     }
   }
 
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__menu {
+    position: relative;
+    display: flex;
+  }
+
   &__list {
     position: absolute;
+    left: 0;
     width: 50%;
     margin-top: 60px;
 
     &::before {
       position: absolute;
       content: '';
-      background-image: url('../src/img/services/bg-1-desk.webp');
       background-size: cover;
       width: 208px;
       height: 261px;
@@ -44,13 +45,74 @@
     &::after {
       position: absolute;
       content: '';
-      background-image: url('../src/img/services/bg-2-desk.webp');
+      
       background-size: cover;
       width: 362px;
       height: 416px;
       right: -490px;
       top: -30px;
       z-index: 1;
+    }
+  }
+
+  &__list--hand {
+
+    &::before {
+      background-image: url('../img/services/bg-m-1-desk.webp');
+    }
+    
+    &::after {
+      background-image: url('../img/services/bg-m-2-desk.webp');
+    }
+  }
+
+  &__list--nail {
+
+    &::before {
+      background-image: url('../img/services/bg-n-2-desk.webp');
+    }
+    
+    &::after {
+      background-image: url('../img/services/bg-n-1-desk.webp');
+    }
+  }
+
+  &__list--leg {
+
+    &::before {
+      background-image: url('../img/services/bg-m-1-desk.webp');
+    }
+    
+    &::after {
+      background-image: url('../img/services/bg-l-1-desk.webp');
+      width: 415px;
+      height: 520px;
+      top: -70px;
+    }
+  }
+
+  &__list--brow {
+
+    &::before {
+      background-image: url('../img/services/bg-b-2-desk.webp');
+    }
+    
+    &::after {
+      background-image: url('../img/services/bg-b-1-desk.webp');
+      width: 415px;
+      height: 520px;
+      top: -70px;
+    }
+  }
+
+  &__menu-item {
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.4s;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-color;
     }
   }
 

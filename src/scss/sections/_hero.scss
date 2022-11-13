@@ -1,9 +1,9 @@
 .hero {
-  // position: relative;
   padding: 60px 0 100px;
 
   &__inner {
     display: flex;
+    position: relative;
   }
 
   &__title {
@@ -26,7 +26,7 @@
       width: 335px;
       height: 335px;
       background: #E3EBC1;
-      filter: blur(125px);
+      filter: blur(50px);
       left: 0;
       top: 0;
       z-index: -1;
@@ -39,9 +39,8 @@
 
   &__img {
     position: absolute;
-    right: 40px;
-    bottom: -185px;
-  // при большом экране падает
+    right: 10px;
+    top: 130px;
   }
 
   &__btn {

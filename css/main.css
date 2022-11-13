@@ -90,6 +90,13 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 55px;
+  text-align: center;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 400;
+}
+
 .btn {
   background-color: inherit;
   border: 1px solid #000000;
@@ -159,6 +166,7 @@ body {
 }
 .hero__inner {
   display: flex;
+  position: relative;
 }
 .hero__title {
   font-size: 24px;
@@ -179,7 +187,7 @@ body {
   width: 335px;
   height: 335px;
   background: #E3EBC1;
-  filter: blur(125px);
+  filter: blur(50px);
   left: 0;
   top: 0;
   z-index: -1;
@@ -189,8 +197,8 @@ body {
 }
 .hero__img {
   position: absolute;
-  right: 40px;
-  bottom: -185px;
+  right: 10px;
+  top: 130px;
 }
 .hero__btn {
   margin-right: 30px;
@@ -230,38 +238,38 @@ body {
 }
 
 .services {
-  padding: 100px 0 80px;
+  padding: 100px 0 350px;
 }
-.services__title {
-  font-size: 72px;
-  text-align: center;
-  font-family: "Cormorant Garamond", sans-serif;
-  font-weight: 400;
-}
-.services__menu {
+.services__inner {
   position: relative;
-  display: flex;
 }
-.services__menu::after {
+.services__inner::after {
   position: absolute;
   content: "";
   width: 335px;
   height: 335px;
   background: #E3EBC1;
-  filter: blur(125px);
+  filter: blur(50px);
   left: 0;
-  top: -25px;
+  top: 50px;
   z-index: -1;
+}
+.services__title {
+  margin-bottom: 50px;
+}
+.services__menu {
+  position: relative;
+  display: flex;
 }
 .services__list {
   position: absolute;
+  left: 0;
   width: 50%;
   margin-top: 60px;
 }
 .services__list::before {
   position: absolute;
   content: "";
-  background-image: url("../src/img/services/bg-1-desk.webp");
   background-size: cover;
   width: 208px;
   height: 261px;
@@ -271,13 +279,50 @@ body {
 .services__list::after {
   position: absolute;
   content: "";
-  background-image: url("../src/img/services/bg-2-desk.webp");
   background-size: cover;
   width: 362px;
   height: 416px;
   right: -490px;
   top: -30px;
   z-index: 1;
+}
+.services__list--hand::before {
+  background-image: url("../img/services/bg-m-1-desk.webp");
+}
+.services__list--hand::after {
+  background-image: url("../img/services/bg-m-2-desk.webp");
+}
+.services__list--nail::before {
+  background-image: url("../img/services/bg-n-2-desk.webp");
+}
+.services__list--nail::after {
+  background-image: url("../img/services/bg-n-1-desk.webp");
+}
+.services__list--leg::before {
+  background-image: url("../img/services/bg-m-1-desk.webp");
+}
+.services__list--leg::after {
+  background-image: url("../img/services/bg-l-1-desk.webp");
+  width: 415px;
+  height: 520px;
+  top: -70px;
+}
+.services__list--brow::before {
+  background-image: url("../img/services/bg-b-2-desk.webp");
+}
+.services__list--brow::after {
+  background-image: url("../img/services/bg-b-1-desk.webp");
+  width: 415px;
+  height: 520px;
+  top: -70px;
+}
+.services__menu-item {
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.services__menu-item:hover, .services__menu-item:focus {
+  background-color: #D4DCB2;
 }
 .services__menu-item + .services__menu-item {
   margin-left: 95px;
@@ -306,4 +351,11 @@ body {
 
 .services__menu-link.services__menu-link--active ~ .services__list {
   display: block;
+}
+
+.portfolio {
+  padding: 200px 0 50px;
+}
+.portfolio__title {
+  margin-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */
