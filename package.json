@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://Agami-Malikov.github.io/Nail-Art-Alya",
   "scripts": {
-    "dev": "parcel src/*.html",
+    "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /nail-art-alya/"
   },
   "repository": {
